@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="历史数据曲线"
+    android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/start_time"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:text="日期"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input_date"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignStart="@+id/input_time"
+        android:background="@drawable/editsharp"
+        android:hint="xx-xx" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="103dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="104dp"
+        android:text="开始时间"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/input_time"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/start_time"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/editsharp"
+        android:hint="xx:xx:xx" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="103dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/start_time"
+        android:layout_marginTop="150dp"
+        android:text="结束时间"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input_endTime"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input_time"
+        android:layout_alignTop="@+id/end_time"
+        android:background="@drawable/editsharp"
+        android:hint="xx:xx:xx" />
+
+    <Button
+        android:id="@+id/search_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:text="开始查询" />
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp" />
+
+
+</RelativeLayout>

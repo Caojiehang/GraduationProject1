@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/device_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="运行状态"
+        android:textSize="24sp"
+        android:textStyle="bold" 
+        />
+
+    <TextView
+        android:id="@+id/receive_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="73dp"
+        android:text="手套类型："
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/msg_eco"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/receive_data"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/text_view_border"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/line_solid" />
+
+
+    <Button
+        android:id="@+id/send_eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="232dp"
+        android:text="点击获取"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/data1_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/receive_data"
+        android:layout_marginTop="136dp"
+        android:text="运行速度："
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msg_data1"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/data1_rec"
+        android:layout_alignStart="@+id/msg_eco"
+        android:background="@drawable/text_view_border"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/line_solid" />
+
+    <TextView
+        android:id="@+id/data2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/receive_data"
+        android:layout_marginTop="194dp"
+        android:text="生产效率："
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/msg_data2"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/data2_title"
+        android:layout_alignStart="@+id/msg_eco"
+        android:background="@drawable/text_view_border"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/fenge_line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="317dp"
+        android:background="@drawable/line_solid" />
+
+    <TextView
+        android:id="@+id/control_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="224dp"
+        android:text="电机控制"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/open_bt"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="137dp"
+        android:layout_marginStart="33dp"
+        android:text="开启" />
+
+    <Button
+        android:id="@+id/close_bt"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/open_bt"
+        android:layout_marginEnd="33dp"
+        android:text="停止" />
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="182dp"
+        android:text="通信测试"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Receive_ET"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="116dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/messge_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_msg"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/send_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="29dp"
+        android:text="发送数据"
+        android:textSize="20dp" />-->
+
+</RelativeLayout>

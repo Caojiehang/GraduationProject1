@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/connect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="设备连接"
+            android:textColor="#18afca"
+            android:textSize="24dp" />
+
+        <RelativeLayout
+            android:id="@+id/ip_la"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/ip_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="72dp"
+                android:text="IP地址："
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="157dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="72dp"
+                android:background="@drawable/editsharp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/port_la"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_below="@id/ip_la"
+            android:layout_marginTop="10dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/port_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="71dp"
+                android:text="端口号:   "
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/et_port"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="79dp"
+                android:background="@drawable/editsharp"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/build_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="220dp"
+            android:layout_toStartOf="@+id/device_name"
+            android:text="建立连接"
+            android:textColor="#053bee"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/cancel_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/build_connect"
+            android:layout_gravity="center"
+            android:layout_marginEnd="36dp"
+            android:text="断开连接"
+            android:textColor="#ff0919"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/line_solid" />
+
+        <ImageView
+            android:id="@+id/device_img"
+            android:layout_width="wrap_content"
+            android:layout_height="172dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="93dp"
+            android:src="@drawable/esp8266" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="65dp"
+            android:text="Esp8266-Wifi模块" />
+    </RelativeLayout>
+</LinearLayout>
